@@ -309,6 +309,7 @@ textarea {
     font-family: var(--font-family-base);
     position: relative;
     background-color: var(--color-text-global-one);
+    padding: 1rem;
 }
 
 @media (min-width: 1440px) {
