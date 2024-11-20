@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family-base: "Oswald", sans-serif;
+    --padding-global: 4rem;
+    --font-size-title: 2.625rem;
+    --gap-global: 5rem;
+    --font-size-paragrafo: 1.75rem;
+    --color-text-global-one: #133E87;
+    --color-text-global-two:#001F3F;
+    --backgrond-color-one: #608BC1;
+    --background-color-two: #CBDCEB;
+}
+
+header {
+    padding: 1rem;
+    background-image: url(img/giphy.webp);
+    background-size: cover;
+    height: 100vh;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    gap: 30rem;
+}
+
+.nome-portifolio {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-paragrafo);
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.menu-pesquisa {
+    font-family: var(--font-family-base);
+    display: flex;
+    text-align: center;
+    gap: 0.625rem;
+    list-style-type: none;
+}
+
+.menu-pesquisa a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu-pesquisa :hover {
+    color: #edf570;
+}
+
+.apresentacao {
+    padding: 6rem;
+    display: flex;
+    align-items: center;
+    gap: var(--gap-global);
+}
+
+.foto-perfil {
+    width: 60%;
+    border-radius: 80%; /*corta a imagem */
+}
+
+.textos-apresentacao {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-base);
+    text-align: center;
+    gap: 2rem;
+}
+
+.texto-informativo {
+    font-size: var(--font-size-title);
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+.texto-informativo-dois {
+    font-size: var(--font-size-paragrafo);
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 1rem;
+}
+
+.github {
+    text-align: center;
+    font-family: var(--font-family-base);
+    font-size: 1rem;
+}
+
+.sobre-mim {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-global);
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-global);
+    color: var(--color-text-global-one);
+    background-color: var(--backgrond-color-one);
+}
+
+.titulo-sobre-mim {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-title);
+}
+
+.paragrafo-sobre-mim {
+    font-family: var(--font-family-base);
+    font-size:var(--font-size-paragrafo);
+    text-align: center;
+}
+
+.skills {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-global);
+    padding: var(--padding-global);
+    align-items: center;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-paragrafo);
+    background-color: var(--background-color-two);
+    color: var(--color-text-global-two);
+}
+
+.titulo-skills{
+    font-size: var(--font-size-title);
+    padding: var(--padding-global);
+}
+
+.logos-skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: var(--font-size-paragrafo);
+    text-align: center;
+    gap: var(--gap-global);
+}
+
+.tamanho-logos-skills {
+    width: 6.25rem;
+}
+
+.hobbies {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-global);
+    padding: var(--padding-global);
+    align-items: center;
+    justify-content: space-around;
+    font-family: var(--font-family-base);
+    background-color: var(--backgrond-color-one);
+    color: var(--color-text-global-one);
+}
+
+.titulo-hobbies{
+    font-size: var(--font-size-title);
+}
+
+.logos-hobbies {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: var(--font-size-paragrafo);
+    text-align: center;
+    gap: var(--gap-global);
+}
+
+.tamanho-logos-hobbies {
+    width: 5rem;
+}
+
+.formacoes {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-global);
+    padding: var(--padding-global);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--background-color-two);
+    color: var(--color-text-global-two);
+}
+
+.conteudo-formacoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-formacoes {
+    font-family: var(--font-family-base);
+    font-size:var(--font-size-title);
+}
+
+.texto-alura {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-paragrafo);
+    gap: var(--gap-global);
+    padding: var(--padding-global);
+}
+
+.logo-alura {
+    width: 40%;
+}
+
+.projetos {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-global);
+    padding: var(--padding-global);
+    align-items: center;
+    text-align: center;
+    background-color: var(--backgrond-color-one);
+    color: var(--color-text-global-one);
+    font-family: var(--font-family-base);
+}
+
+.titulo-projetos {
+    font-size: var(--font-size-title);
+}
+
+.paragrafo-projetos {
+    font-size: var(--font-size-paragrafo);
+    line-height: 1.5;
+}
+
+.logo-github {
+    width: 20%;
+}
+
+.campo-contato {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-global);
+    padding: var(--padding-global);
+    background-color: var(--background-color-two);
+    color: var(--color-text-global-two);
+}
+
+.titulo-contato {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-title);
+}
+
+/*.foto-telefone {
+    width: 6.25rem;
+}
+
+.paragrafo-contato {
+    font-family: var(--font-family-base);
+    font-size: 1.875rem;
+    text-align: center;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: var(--font-family-base);
+    gap: 1rem;
+    align-items: center;
+}
+
+.campo-contato input[type="text"],
+.campo-contato textarea,
+#email {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3125rem;
+    border: 0.125rem solid black;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    font-family: var(--font-family-base);
+}*/
+
+.email {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: var(--padding-global);
+    font-size: var(--font-size-paragrafo);
+    color: #000000;
+}
+
+.img-email {
+    width: 20%;
+}
+
+.rodape {
+    color: black;
+    text-align: center;
+    font-family: var(--font-family-base);
+    position: relative;
+    background-color: var(--color-text-global-one);
+}
+
+@media (min-width: 1440px) {
+    .cabecalho {
+        justify-content: space-between;
+    }
+
+    .apresentacao {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .menu-pesquisa {
+        display: none;
+    }
+
+    .titulo-sobre-mim {
+        margin: 0;
+    }
+
+    .paragrafo-sobre-mim {
+        margin: 0;
+    }
+
+    .apresentacao {
+        text-align: center;
+    }
+
+    .texto-informativo-dois {
+        font-size: 1.5625rem;
+    }
+
+    .foto-perfil {
+        width: 80%;
+    }
+
+    .logo-github {
+        width: 10%;
+    }
+
+    .projeto-decodificador {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*.paragrafo-contato {
+        font-size: 1.5625rem;
+    }*/
+}
+
+@media (max-width: 600px) {
+    .menu-pesquisa {
+        display: none;
+    }
+
+    .apresentacao {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre-mim {
+        align-items: center;
+    }
+
+    .tamanho-logos-hobbies,
+    .tamanho-logos-skills {
+        width: 3rem;
+    }
+
+    .projeto-decodificador {
+        display: flex;
+        flex-direction: column;
+    }
+}

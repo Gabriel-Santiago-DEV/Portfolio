@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfólio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <section class="cabecalho">
+            <h1 class="nome-portifolio">Gabriel Santiago Davi</h1>
+            <ul class="menu-pesquisa">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#formacoes">Formações</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </section>
+        <section class="apresentacao">
+            <div class="textos-apresentacao">
+                <h1 class="texto-informativo">Olá, meu nome é <br>Gabriel Santiago Davi<br>e construo páginas web!</h1>
+                <p class="texto-informativo-dois">Estudante Front-end!</p>
+            </div>
+            <div>
+                <img class="foto-perfil" src="img/img perfil.jpg" alt="foto-perfil">
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="sobre-mim" id="sobre">
+            <h1 class="titulo-sobre-mim">Sobre mim</h1>
+            <p class="paragrafo-sobre-mim">Meu nome é Gabriel e sou estudante de desenvolvimento front-end.<br>
+                Tenho uma paixão profunda por criar interfaces dinâmicas e envolventes, onde posso unir design e
+                tecnologia.<br>
+                Cada linha de código é uma oportunidade de transformar ideias em realidade<br> e estou sempre em busca
+                de aprender sobre novas tendências e ferramentas.<br>
+                Estou animado para continuar minha jornada nesse universo e contribuir para projetos que façam a
+                diferença.<br>Acredito que, com dedicação e criatividade, posso ajudar a moldar o futuro digital.</p>
+        </section>
+        <section class="skills">
+            <h1 class="titulo-skills" id="skills">Skills</h1>
+            <div class="logos-skills">
+                <figure>
+                    <img class="tamanho-logos-skills" src="img/html-5.png" alt="Logotipo do html 5">
+                    <figcaption>HTML 5</figcaption>
+                </figure>
+                <figure>
+                    <img class="tamanho-logos-skills" src="img/css-3.png" alt="Logotipo do css">
+                    <figcaption>CSS</figcaption>
+                </figure>
+                <figure>
+                    <img class="tamanho-logos-skills" src="img/java-script.png" alt="Logotipo do java script">
+                    <figcaption>JAVA SCRIPT</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="hobbies">
+            <h1 class="titulo-hobbies" id="hobbies">Hobbies</h1>
+            <div class="logos-hobbies">
+                <figure>
+                    <img class="tamanho-logos-hobbies" src="img/book.png" alt="livro">
+                    <figcaption>LER</figcaption>
+                </figure>
+                <figure>
+                    <img class="tamanho-logos-hobbies" src="img/musical-note.png" alt="nota-musical">
+                    <figcaption>OUVIR MÚSICA</figcaption>
+                </figure>
+                <figure>
+                    <img class="tamanho-logos-hobbies" src="img/joystick.png" alt="controle-de-videogame">
+                    <figcaption>JOGAR JOGOS</figcaption>
+                </figure>
+                <figure>
+                    <img class="tamanho-logos-hobbies" src="img/programmer.png" alt="programador">
+                    <figcaption>PROGRAMAR</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="formacoes" id="formacoes">
+            <h1 class="titulo-formacoes">Formações</h1>
+            <div class="conteudo-formacoes">
+                <figure>
+                    <img class="logo-alura" src="img/Alura.png" alt="logo-alura">
+                    <figcaption class="texto-alura">Estudante Front-end <br>no projeto<br> <strong>Oracle ONE na
+                            Alura</strong></figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="projetos" id="projetos">
+            <h1 class="titulo-projetos">Projetos</h1>
+            <p class="paragrafo-projetos">Acompanhe meu Github para ficar por dentro de tudo que realizo.
+                <br>github.com/Gabriel-Santiago-DEV</p>
+            <a href="https://github.com/Gabriel-Santiago-DEV">
+            <img class="logo-github" src="img/github-logo.png" alt="logo-github">
+            </a>
+        </section>
+        <!-- (campo contato que vai ser adicionado no futuro junto com o js)-->
+        <section class="contato" id="contato">
+            <div class="campo-contato">
+                <h1 class="titulo-contato">Contato</h1>
+                <!--<img class="foto-telefone" src="img/telephone-call.png" alt="foto-telefone">
+                <p class="paragrafo-contato">Quer entrar em contato comigo?<br> Preencha o campo abaixo e entrarei em
+                    contato o mais rápido possivel.</p>
+                <form class="campo-formulario" action="#" method="POST">
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email" required><br>
+                    </div>
+                    <div>
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto"><br>
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" cols="33"
+                            placeholder="Digite sua mensagem"></textarea><br>
+                    </div>
+                    <button type="submit" id="botao_mensagem" class="botao-mensagem">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>-->
+                <section class="email">
+                    <img class="img-email" src="img/email.png" alt="imagem-email">
+                    <p>gabigabisdb@gmail.com</p>
+                </section>
+    </main>
+    <footer class="rodape">Desenvolvido por <strong>Gabriel Santiago Davi</strong> 2024</footer>
+    <!--<script src="main.js"></script>-->
+</body>
+
+</html>
